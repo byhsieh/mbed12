@@ -51,7 +51,7 @@ int main() {
     pc.baud(9600);
 
 
-    encoder_ticker.attach(&encoder_control, .01);
+    encoder_ticker.attach(&encoder_control, .001);
 
 
     servo.period(.02);
@@ -59,7 +59,7 @@ int main() {
 
     while(1) {
 
-    servo_control(-29.931);//5cm
+    servo_control(-26.529593003533158);//5cm
 
 
     steps = 0;
@@ -80,7 +80,7 @@ int main() {
 
     //TODO: revise this value according to your result
 
-    servo_control(54.094);//8cm
+    servo_control(44.42034370335157);//8cm
 
 
     steps = 0;
